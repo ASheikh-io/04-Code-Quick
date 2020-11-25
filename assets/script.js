@@ -75,6 +75,8 @@ const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 5;
 
 // Start Game
+
+
 function startGame() {
     startButton.onClick = () => {
         console.log("clicked");
@@ -82,3 +84,4 @@ function startGame() {
 }
 
 
+startGame();
