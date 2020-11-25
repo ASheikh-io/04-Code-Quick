@@ -1,67 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Quiz</title>
-
-  <!-- link to stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+  <title>JavaScript Code Quiz</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/cedec4e11c.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <div class="container-fluid">
-    <div class="row pt-3">
-
-      <!-- Full screen left layout -->
-      <div class="col-lg-2"></div>
-
-      <!-- Main content column -->
-      <div class="col-lg-8 vh-100">
-
-        <main class="card card-style align-items-center ">
-
-          <img width="100%" class="card-img-top" src="./assets/images/71b41185a613.jpg" alt="JavaScript SpeedQuiz logo">
-
-          <!-- The timer and final score display -->
-          <div class="container-box">
-            <div><span id="container-label"> Timer </span> <span class="add-space"> – </span><span class=""
-                id="timer-container">3:00</span></div>
-          </div>
-          <!--The welcome screen with instructions-->
-          <div class="welcome-box">
-            <div class="welcome-card px-md-5">
-              <h1 class="card-title">Quiz Rules</h1>
-              <p>Welcome to the JS timed Code Quiz!</p>
-
-              <!-- Custom bullets for styling -->
-              <ul class="">
-                <li><span class="rule-bullet">1</span> There are 5 questions</li>
-                <li><span class="rule-bullet">2</span> Timer begins with 3:00</li>
-                <li><span class="rule-bullet">3</span> Wrong answers – :30 from the timer</li>
-                <li><span class="rule-bullet">4</span> Correct answers + :10 to the timer</li>
-                <li><span class="rule-bullet">5</span> Remaining time is your score</li>
-              </ul>
-
-              <!-- Card footer with start button that calls the first JS function -->
-              <div class="mt-5 button-box"><button onclick="startQuiz()" id="start"
-                  class="btn-success btn-lg px-5">START</button></p>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+  <div class="container">
+    <div id="home" class="flex-column flex-center">
+      <h1>JavaScript Code Quiz</h1>
+      <a href="/game.html" class="btn">Play</a>
+      <a href="/highscores.html" id="highscores-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
     </div>
   </div>
-
-  <!-- link to javascript -->
-  <script src="./assets/script.js"></script>
 </body>
-
 </html>
