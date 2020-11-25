@@ -1,4 +1,4 @@
-// const startButton = document.querySelector("#start-button");
+const startButton = document.querySelector("#start-button");
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
@@ -75,8 +75,10 @@ const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 5;
 
 // Start Game
-document.getElementById('start-button').onclick = function(){
-    console.log("clicked");
+function startGame() {
+    startButton.onClick = () => {
+        console.log("clicked");
+    }
 }
 
 
