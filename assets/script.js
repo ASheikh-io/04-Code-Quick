@@ -78,10 +78,10 @@ const MAX_QUESTIONS = 5;
 
 
 function startGame() {
-    startButton.onClick = () => {
-        console.log("clicked");
-    }
+    console.log("clicked")
+    // startButton.onClick = function (){
+    //     console.log("clicked");
+    // }
 }
 
 
-startGame();
