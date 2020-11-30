@@ -1,3 +1,6 @@
+const homeScreen = document.querySelector("#home");
+const startButton = document.getElementById("start-btn");
+const quizContainer = document.querySelectorAll(".quiz-container");
 const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
@@ -75,13 +78,12 @@ const MAX_QUESTIONS = 5;
 
 // Start Game
 
-
 function startGame() {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-};
+    console.log("clicked")
+    homeScreen.setAttribute("class", "hide-card" );
+    quizContainer.setAttribute("class", "show-card");
+}
+
 
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
