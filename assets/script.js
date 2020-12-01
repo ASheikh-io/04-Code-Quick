@@ -90,7 +90,12 @@ let questions = [{
 let startTime = 180;
 let countDownInterval;
 
+// function clockTick() {
+//     L
+// }
+
 function startTimer() {
+    var timerId = setInterval(clockTick, 1000);
   countDownInterval = setInterval(function () {
     startTime -= 1;
 
@@ -105,7 +110,6 @@ function startTimer() {
     if (startTime < 0) {
       clearInterval(countDownInterval);
       timerDisplay.textContent = "EXPIRED";
-      displayBox.setAttribute("class", "incorrect");
       startTime = 0;
     }
   }, 1000);
