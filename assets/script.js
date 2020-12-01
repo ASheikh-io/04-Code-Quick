@@ -125,7 +125,7 @@ function askQuestions() {
   
     // Loop to add the answer options
     for (let x = 0; x < choices.length; x++) {
-      choices[x].innerHTML = questions[questionIncrement].choices[x];
+      choices[x].innerText = questions[questionIncrement].choices[x];
     }
     console.log(choices);
   }
