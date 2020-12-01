@@ -15,14 +15,15 @@
   <div class="container">
     <div id="home" class="flex-column flex-center">
       <h1>JavaScript Code Quiz</h1>
-        
-          <ul class="rules">
+        <div class="rules">
+          <ul>
             <li> There are 5 questions</li>
             <li>Timer begins with 3:00</li>
             <li> Wrong answers – :30</li>
             <li>Correct answers + :10</li>
             <li>Remaining time is the score</li>
           </ul>
+        </div>
         
       <button id="start-btn" class="btn" onclick="startGame()">Start</button>
       <button id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></button>
@@ -30,23 +31,20 @@
 
    
       <div class="quiz-container flex-column flex-center hide-card">
-        <div class="timer">
-          <div class="time_left_txt">Time Left</div>
-          <div class="timer_sec">15</div>
-        </div>
+        
  
         <!-- <div class="time_line"></div> -->
         <div id="game" class="justify-center flex-column">
           <div id="hud">
             <div class="hud-item">
-              <p id="progressText" class="hud-prefix"> Question </p>
+              <h1 id="progressText" class="question-header"> Question </h1>
               <div id="progressBar">
                 <div id="progressBarFull"></div>
               </div>
             </div>
-            <div class="hud-item">
-              <p class="hud-prefix">Tmer</p>
-              <h1 class="hud-main-text" id="timer">0</h1>
+            <div class="display-box">
+              <div><span id="display-label"> Timer </span> <span class="add-space"> – </span><span class=""
+                  id="timer-display">3:00</span></div>
             </div>
           </div>
           <h1 id="question"> What is the answer to this question?</h1>
@@ -69,6 +67,10 @@
           <div class="choice-container">
             <p class="choice-prefix">E</p>
             <p class="choice-text" data-number="5">Choice</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">F</p>
+            <p class="choice-text" data-number="6">Choice</p>
           </div>
         </div>
       </div>

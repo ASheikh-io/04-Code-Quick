@@ -34,6 +34,17 @@ div.show-card{
   padding: 2rem;
 }
 
+div.display-box {
+  width: 100%;
+  font-size: 30px;
+  text-align: right;
+  margin: 8px 0px;
+  padding-top: 2px;
+  color: white;
+}
+
+
+
 .quiz-contianer{
   margin-bottom: 0.8rem;
   width: 100%;
@@ -84,20 +95,7 @@ div.show-card{
   text-align: center;
 }
 
-#progressBar {
-  width: 20rem;
-  height: 3rem;
-  border: 0.2 rem solid rgba(11, 223, 36);
-  margin-top: 2rem;
-  border-radius: 50px;
-  overflow: hidden;
-}
 
-#progressBarFull {
-  height: 100%;
-  background: rgba(11, 223, 36);
-  width: 0%;
-}
 
 @media screen and (max-width: 768px) {
   .choice-container {
